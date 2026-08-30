@@ -12,16 +12,15 @@ int main(void) {
 
     if (head != NULL && second != NULL) {
         head->data = 10;
-	head->next = second;
+        head->next = second;
+        second->data = 20;
+        second->next = NULL;
 
-	second->data = 20;
-	second->next = NULL;
+        printf("First node: %d\n", head->data);
+        printf("Second node: %d\n", second->data);
 
-	printf("First node: %d\n", head->data); 
-	printf("Second node: %d\n", second->data);
-
-	free(second);
-	free(head);
+        free(second);
+        free(head);
     }
 
     return 0;
