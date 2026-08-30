@@ -7,16 +7,22 @@ struct Node {
 };
 
 int main(void) {
-    struct Node *a = malloc(sizeof(struct Node));
-    struct Node *b = malloc(sizeof(struct Node));
-    if (head && second) {
+    struct Node *head = malloc(sizeof(struct Node));
+    struct Node *second = malloc(sizeof(struct Node));
+
+    if (head != NULL && second != NULL) {
         head->data = 10;
 	head->next = second;
+
 	second->data = 20;
 	second->next = NULL;
-	printf("List: %d, List: %d\n", head->data, head->data, head->next->data);
+
+	printf("First node: %d\n", head->data); 
+	printf("Second node: %d\n", second->);
+
 	free(second);
 	free(head);
     }
+
     return 0;
 }
