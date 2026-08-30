@@ -12,7 +12,7 @@ int main(void) {
     if (node != NULL) {
         node->data = 42;
 	node->next = NULL;
-	printf("Node date: %d\n", node->data);
+	printf("Node data: %d\n", node->data);
 	free(node);
     }
 
