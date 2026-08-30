@@ -16,8 +16,7 @@ int main(void) {
         second->data = 20;
         second->next = NULL;
 
-        printf("First node: %d\n", head->data);
-        printf("Second node: %d\n", second->data);
+        printf("List: %d -> %d\n", head->data, second->data);
 
         free(second);
         free(head);
