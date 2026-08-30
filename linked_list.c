@@ -18,7 +18,7 @@ int main(void) {
 	second->next = NULL;
 
 	printf("First node: %d\n", head->data); 
-	printf("Second node: %d\n", second->);
+	printf("Second node: %d\n", second->data);
 
 	free(second);
 	free(head);
